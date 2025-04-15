@@ -1,5 +1,6 @@
 body{
-  background: linear-gradient(to right, purple, wheat, grey);
+  background-color: #e4e9fd;
+  background-image: -webkit-linear-gradient(65deg, #a683e3 50%, #e4e9fd 50%);
 }
 
 #root {
@@ -18,26 +19,33 @@ body{
 }
 .title{
   color: white;
-  font-size: 1.6rem;
-  font-family: Arial, Helvetica, sans-serif;
+  font-size: 1.8rem;
+  font-weight: 700;
+  /* letter-spacing: .1rem; */
+  font-family:Verdana, Geneva, Tahoma, sans-serif;
   padding: 1rem;
-  background-color: purple;
+  margin-bottom: 1rem;
+  background-color: #a683e3;
 }
 .list-item li{
   list-style: none;
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
   font-size: 1.5rem;
+  color: #333;
+  font-weight: 500;
   text-align: left;
+  margin-right: 1.5rem;
+  padding: .5rem;
 }
 .list-item{
   display: grid;
   align-items: center;
-  grid-template-columns: 1fr 6fr auto;
+  grid-template-columns: 1fr 8fr auto;
   padding: .5rem;
 }
 
 .list-item img{
-  height: 1.5rem;
+  height: 1.8rem;
   cursor: pointer;
 }
 
@@ -56,25 +64,32 @@ body{
   font-size: 1.6rem;
 }
 
-@keyframes logo-spin {
-  from {
-    transform: rotate(0deg);
+@media (max-width: 768px) {
+  #root {
+    width: 90%; /* Make root width smaller for mobile */
+    padding: 1rem; /* Adjust padding */
   }
-  to {
-    transform: rotate(360deg);
+
+  .title {
+    font-size: 1.2rem; /* Smaller font size for title on mobile */
   }
-}
 
-@media (prefers-reduced-motion: no-preference) {
-  a:nth-of-type(2) .logo {
-    animation: logo-spin infinite 20s linear;
+  .list-item {
+    grid-template-columns: 1fr 8fr auto; /* Adjust grid layout */
+    padding: .4rem; /* Smaller padding for mobile */
   }
-}
 
-.card {
-  padding: 2em;
-}
+  .list-item img {
+    height: 1.5rem; /* Smaller image size on mobile */
+  }
 
-.read-the-docs {
-  color: #888;
+  .list-input {
+    padding: 0 .5rem .5rem; /* Keep padding consistent */
+  }
+
+  .list-input input {
+    font-size: 1.4rem; /* Adjust font size for input */
+    padding: 0 .8rem; /* Adjust input padding */
+  }
+
 }

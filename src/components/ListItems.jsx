@@ -31,7 +31,7 @@ function ListItems(props) {
         {props.items.map((item, index) => (
           <React.Fragment key={index}>
             <div className="list-item">
-              <DeleteIcon onClick={() => props.delete(index)} />
+              <DeleteIcon fontSize="large" onClick={() => props.delete(index)} />
               <li
                 ref={(el) => (listItemRef.current[index] = el)}
                 contentEditable={editIndex === index}
