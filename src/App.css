@@ -64,6 +64,8 @@ body{
   font-size: 1.6rem;
 }
 
+
+
 @media (max-width: 768px) {
   #root {
     width: 90%; /* Make root width smaller for mobile */
@@ -92,4 +94,9 @@ body{
     padding: 0 .8rem; /* Adjust input padding */
   }
 
+  .custom-fab{
+    position: absolute;
+    top: 3.5rem;
+    right: 2rem;
+  }
 }

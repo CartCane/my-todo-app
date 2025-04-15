@@ -25,7 +25,7 @@ function UserInput(props){
           placeholder="New item"
           value={inputText}
         />
-        <Fab size="small" type="submit" color="primary">
+        <Fab className="custom-fab" size="small" type="submit" color="primary">
           <AddIcon />
         </Fab>
       </form>
