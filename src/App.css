@@ -106,7 +106,8 @@ body{
 
   .custom-fab{
     position: absolute;
-    top: 3.5rem;
+    top: 4.5rem;
     right: 2rem;
+    size: large;
   }
 }
