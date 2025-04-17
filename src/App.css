@@ -17,7 +17,7 @@ body{
 }
 .list-container{
   background-color: white;
-  padding: 1rem;
+  padding: .2rem 1rem;
 }
 .title{
   color: white;
@@ -38,6 +38,8 @@ body{
   text-align: left;
   margin-right: 1.5rem;
   padding: .5rem;
+  overflow: hidden;
+  white-space: pre-wrap;
 }
 .list-item{
   display: grid;
@@ -58,12 +60,17 @@ body{
   grid-template-columns: 1fr auto;
 }
 
-.list-input input{
+.list-input textarea{
+  display: flex;
+  height: 3rem;
+  align-items: center;
   border: none;
   border-bottom: .1rem solid black;
   padding: 0 1rem;
   outline: none;
   font-size: 1.6rem;
+  resize: none;
+  overflow: hidden;
 }
 
 
@@ -91,9 +98,10 @@ body{
     padding: 0 .5rem .5rem; /* Keep padding consistent */
   }
 
-  .list-input input {
+  .list-input textarea {
     font-size: 1.4rem; /* Adjust font size for input */
     padding: 0 .8rem; /* Adjust input padding */
+    overflow: hidden;
   }
 
   .custom-fab{

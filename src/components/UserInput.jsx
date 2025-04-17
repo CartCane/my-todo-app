@@ -19,15 +19,15 @@ function UserInput(props){
 
     return(
         <form onSubmit={handleSubmit} className="list-input">
-        <input
-          onChange={updateItems}
-          type="text"
-          placeholder="New item"
-          value={inputText}
-        />
-        <Fab className="custom-fab" size="small" type="submit" color="primary">
-          <AddIcon />
-        </Fab>
+          <textarea
+            onChange={updateItems}
+            type="text"
+            placeholder="New item"
+            value={inputText}
+          />
+          <Fab className="custom-fab" size="small" type="submit" color="primary">
+            <AddIcon />
+          </Fab>
       </form>
     )
 }
